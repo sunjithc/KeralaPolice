@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KeralaPolice</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+     <string name="msg"> 	
+
+I am glad to know that Kerala Police has a well-equipped website that is helping it to reach out to the public with an intention to deliver effective, efficient and quality service to the public </string>
+
+</resources>

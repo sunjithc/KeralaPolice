@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#46b1f9"
+            android:dividerHeight="50dp"
+            android:orientation="vertical"
+            android:showDividers="middle" >
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="2.05" >
+ 
+    </ViewFlipper>
+
+           
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="257dp"
+        android:layout_x="-3dp"
+        android:layout_y="162dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="294dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="157dp"
+                android:layout_height="157dp"
+                android:layout_above="@+id/p"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_home" />
+
+               />
+
+            <Button
+                android:id="@+id/p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/n"
+                android:layout_alignBottom="@+id/n"
+                android:background="@drawable/bprevious" />
+
+            <Button
+                android:id="@+id/n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="29dp"
+                android:background="@drawable/bnext" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+        </LinearLayout>
+</AbsoluteLayout>

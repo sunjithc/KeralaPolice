@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/pbggg">
+
+    <Button
+        android:id="@+id/p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="1dp"
+        android:layout_y="282dp"
+        android:background="@drawable/bprevious" />
+
+    <Button
+        android:id="@+id/n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="248dp"
+        android:layout_y="284dp"
+        android:background="@drawable/bnext" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_x="-2dp"
+        android:layout_y="3dp"
+        android:src="@drawable/ic_people" />
+
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:layout_x="-1dp"
+        android:layout_y="347dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:background="@drawable/edittxt" />
+
+</AbsoluteLayout>
