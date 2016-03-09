@@ -1,0 +1,18 @@
+ SQLiteDatabase loginaccess;
+  
+  loginaccess= Login.this.openOrCreateDatabase("SHOPPING_Login", MODE_PRIVATE, null);
+         loginaccess.execSQL("CREATE TABLE IF NOT EXISTS logindata(cusid varchar, addressid varchar, fname varchar, lname varchar, company varchar, address1 varchar, address2 varchar,city varchar, post varchar, country varchar, reg varchar,cid varchar,stateid varchar,emailid varchar,telephone varchar,password varchar )");
+
+		 loginaccess= Login.this.openOrCreateDatabase("SHOPPING_Login", MODE_PRIVATE, null);
+         loginaccess.execSQL("CREATE TABLE IF NOT EXISTS logindata(cusid varchar, addressid varchar, fname varchar, lname varchar, company varchar, address1 varchar, address2 varchar,city varchar, post varchar, country varchar, reg varchar,cid varchar,stateid varchar,emailid varchar,telephone varchar,password varchar )");
+  
+  loginaccess.execSQL("INSERT INTO  logindata( 
+  
+  cusdetails = Horizontalscrollview.this.openOrCreateDatabase("SHOPPING_cus", MODE_PRIVATE, null);
+        cusdetails.execSQL("CREATE TABLE IF NOT EXISTS cusdata(cusid varchar, addressid varchar)");
+        Cursor crcr = cusdetails.rawQuery("SELECT * FROM cusdata", null);
+        while (crcr.moveToNext()) {
+
+            cusid = crcr.getString(crcr.getColumnIndex("cusid"));
+            addressid = crcr.getString(crcr.getColumnIndex("addressid"));
+        }
